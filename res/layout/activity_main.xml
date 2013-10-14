@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2013 Yoshihiro Miyama
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lines_root"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textAppName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_title"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name_jp"
+            android:textColor="#efefef"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/buttonAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="5dp"
+            android:background="#00000000"
+            android:src="@android:drawable/ic_menu_info_details" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/centerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/batteryRoot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/centerView"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/state_func_battery"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textFuncBattery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/func_title"
+                android:ems="10"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/label_func_battery"
+                android:textColor="#ffffcc"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imageBattery"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_battery" />
+
+            <FrameLayout
+                android:id="@+id/frameBattery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutCurrentBattery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:id="@+id/textCurrentLevelInFrame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/desc_current_batterylevel"
+                        android:textColor="#efefef"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/textThresholdInFrame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/desc_threshold"
+                        android:textColor="#efefef"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textSetThresholdInFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:text="@string/label_battery_setting_screen"
+                    android:textColor="#efefef"
+                    android:textSize="17sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textBatteryDisabledInFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:text="@string/desc_battery_setting_disabled"
+                    android:textColor="#efefef"
+                    android:textSize="17sp"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/manualRoot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/batteryRoot"
+            android:layout_alignLeft="@+id/centerView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/state_func_manual"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textFuncDefault"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/func_title"
+                android:ems="10"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/label_func_default"
+                android:textColor="#ffffcc"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imageManual"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_manual" />
+
+            <TextView
+                android:id="@+id/textManualSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/label_default_setting_screen"
+                android:textColor="#efefef"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/schedRoot"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textFuncSched"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/func_title"
+                android:ems="10"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/label_func_sched"
+                android:textColor="#ffffcc"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_clock" />
+
+            <Button
+                android:id="@+id/btnAddSched"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/state_func_sched"
+                android:gravity="left|center_vertical"
+                android:text="@string/label_sched_setting_screen"
+                android:textColor="#efefef"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/admobspace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+</LinearLayout>

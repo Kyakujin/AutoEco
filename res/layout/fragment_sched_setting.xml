@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2013 Yoshihiro Miyama
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textFuncSched"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/func_title"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:text="@string/label_func_sched"
+        android:textColor="#ffffcc"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textSchedDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lines_description"
+        android:padding="5dp"
+        android:text="@string/desc_sched_setting"
+        android:textColor="#cccccc"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textEcoExecDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lines_sub_description"
+        android:text="@string/desc_ecoexec_time"
+        android:textColor="#cccccc"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/state_func_sched"
+        android:text="0:00"
+        android:textColor="#cccccc"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textRepeatLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/lines_sub_description"
+            android:text="@string/label_repeat"
+            android:textColor="#cccccc"
+            android:textSize="17sp" />
+
+        <TableLayout
+            android:id="@+id/tableRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRWeekText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textLabelMon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/label_mon"
+                    android:textColor="#cccccc"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textLabelTue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/label_tue"
+                    android:textColor="#cccccc"
+                    
+                    android:textSize="14sp"  />
+
+                <TextView
+                    android:id="@+id/textLabelWed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/label_wed"
+                    android:textColor="#cccccc" 
+                    
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textLabelThu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/label_thu"
+                    android:textColor="#cccccc"
+                    
+                    android:textSize="14sp"  />
+
+                <TextView
+                    android:id="@+id/textLabelFri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/label_fri"
+                    android:textColor="#cccccc"
+                    
+                    android:textSize="14sp"  />
+
+                <TextView
+                    android:id="@+id/textLabelSat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/label_sat"
+                    android:textColor="#cccccc"
+                    
+                    android:textSize="14sp"  />
+
+                <TextView
+                    android:id="@+id/textLabelSun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/label_sun"
+                    android:textColor="#cccccc" 
+                    
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRWeekCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <CheckBox
+                    android:id="@+id/chkBoxMon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxTue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxWed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxThu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxFri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxSat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxSun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

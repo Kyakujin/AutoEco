@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2013 Yoshihiro Miyama
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <string name="app_name">オート節電</string>
+    <string name="app_name_jp">オート節電</string>
+    
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">このアプリについて</string>
+    
+    <!-- Eco Settings Description -->
+    <string name="setting_wifi">Wi-Fi</string>
+    <string name="setting_wifi_desc">無効にする</string>
+    <string name="setting_bluetooth">Bluetooth</string>
+    <string name="setting_bluetooth_desc">無効にする</string>
+    <string name="setting_rotate">画面の自動回転</string>
+    <string name="setting_rotate_desc">無効にする</string>
+    <string name="setting_sync">自動同期</string>
+    <string name="setting_sync_desc">無効にする</string>
+    <string name="setting_silent">マナーモード</string>
+    <string name="setting_silent_desc">setted value</string>
+    <string name="setting_brightness">画面の明るさ</string>
+    <string name="setting_brightness_desc">setted value</string>
+    <string name="setting_sleep">画面消灯時間</string>
+    <string name="setting_sleep_desc">setted value</string>
+
+    <!-- View Parts Description -->
+    <string name="desc_set">SET</string>
+    <string name="desc_add">ADD</string>
+    <string name="desc_ok">OK</string>
+    <string name="desc_cancel">Cancel</string>
+    <string name="desc_eco_setting">eco 設定</string>
+    <string name="desc_set_detail">詳細設定</string>
+    <string name="desc_do">実行</string>
+    <string name="desc_caution">注意</string>
+    <string name="desc_nextdisp">次回から表示しない</string>
+    
+    
+    <!-- Top Screen Labels -->
+    <string name="label_func_battery">Battery Level</string>
+    <string name="label_func_sched">Schedule</string>
+    <string name="label_func_default">Manual</string>
+    <!-- Sched Setting Screen Label -->
+    <string name="label_sched_setting_screen">時間を指定して実行</string>
+    <string name="desc_sched_setting">実行時間になると「設定項目」の内容が実行されます</string>    
+    <!-- Battery Setting Screen Label -->
+    <string name="label_battery_setting_screen">しきい値を\n設定して実行</string>
+    <string name="desc_current_batterylevel">残量: </string>
+    <string name="desc_threshold">しきい値: </string>    
+    <string name="desc_measureing">計測中</string>    
+    <string name="desc_battery_setting_disabled">停止中</string>       
+    <string name="desc_battery_setting">バッテリー残量が「しきい値」を下回ると「設定項目」の内容が実行されます</string>    
+    <string name="desc_battery_setting_enable_caution">本アプリではバッテリー連動機能を優先するため、残量が「しきい値」を下回った場合、「Schedule」機能で設定された内容は実行はされません。</string>
+    
+    <string name="desc_current_batterylevel_sub">残量</string>
+    <string name="desc_threshold_sub">しきい値</string>    
+    <string name="desc_enabled_sub">サービスの実行と停止</string>    
+    <string name="desc_battery_func_enabled">サービス実行中</string>    
+    <string name="desc_battery_func_disabled">サービス停止中</string>    
+    
+    <!-- Default Setting Screen Label -->
+    <string name="label_default_setting_screen">手動で実行</string>
+    <string name="desc_manual_setting">「実行」ボタンをタップすると「設定項目」の内容が実行されます</string>
+    
+    <!--  Repeat Settings Labels -->
+    <string name="label_mon">月</string>
+    <string name="label_tue">火</string>
+    <string name="label_wed">水</string>
+    <string name="label_thu">木</string>
+    <string name="label_fri">金</string>
+    <string name="label_sat">土</string>
+    <string name="label_sun">日</string>
+
+    <!--  Select Items -->
+    <string name="radio_on">ONにする</string>
+    <string name="radio_off">OFFにする</string>
+    <string name="radio_normal">着信音とバイブレーションを有効</string>
+    <string name="radio_silent">着信音とバイブレーションを無効</string>
+    <string name="radio_vibrate">バイブレーションのみを有効</string>
+    <string name="radio_time1">15秒</string>
+    <string name="radio_time2">30秒</string>
+    <string name="radio_time3">1分</string>
+    <string name="radio_time4">1分30秒</string>
+    <string name="radio_time5">10分</string>
+    <string name="radio_time6">30分</string>
+    
+    <!-- Dialog Description -->
+    <string name="alert_title_delete">削除</string>
+    <string name="alert_title_settime">時間の設定</string>
+    
+<!-- 
+    <string name="title_brightness">画面の明るさの設定</string>
+    <string name="title_silentmode">マナーモードの設定</string>
+    <string name="title_sleep">画面消灯時間の設定</string>   
+ -->
+
+    <!-- Context Menue-->
+    <string name="context_sched_edit">時間の変更</string>
+    <string name="context_sched_delete">削除</string>
+    
+    <!--  Alert Messages-->
+    <string name="alert_message_delete_sched">スケジュールを削除してもよろしいですか？</string>
+    <string name="alert_max_sched_header">スケジュールを作成できるのは</string>
+    <string name="alert_max_sched_footer">件までです。</string>
+    
+    <!--  Other Descripiton -->
+    <string name="desc_ecoexec_time">実行時間</string>
+    <string name="desc_add_sched">スケジュール追加</string>
+    <string name="desc_enable_sched">スケジュールON</string>
+    <string name="desc_repeat_setting">繰り返し設定</string>
+    <string name="desc_name_undefined">設定名なし</string>
+    <string name="desc_open_sched">詳細設定</string>
+    <string name="desc_edit_sched">時間変更</string>
+    <string name="desc_delete_sched">削除</string>
+    <string name="desc_no_name">設定名なし</string>
+    <string name="desc_brightness">明るさ: </string>
+    <string name="desc_do_eco">: 実行します</string>
+    <string name="desc_after_eco">: 実行完了</string>
+    <string name="label_setting_name">設定名</string>
+    <string name="label_repeat">繰り返し</string>
+    <string name="label_setting_items">設定項目</string>
+    <string name="label_battery">バッテリーしきい値: </string>
+    <string name="label_brightness">明るさ: </string>
+    <string name="label_auto_brightness">明るさを自動調整する</string>
+    <string name="label_menu">メニュー</string>
+    
+    <string name="desc_autobrightness_caution">(機種によっては明るさの自動調整ができない場合があります)</string>
+    
+    <!-- about dialog -->
+    <string name="alert_title_about">このアプリについて</string>    
+    <string name="about_body"><![CDATA[
+        <b>オート節電</b><br>
+        Version %s<br>
+        <br>
+        オート節電をダウンロードして頂き、ありがとうございます。<br>
+        <br>        
+        このアプリケーションでは、任意に指定したタイミングで、端末本体の節電に関わる設定を自動的に実行することができます。<br>
+        <br>
+        [注意]<br>
+        このアプリケーションではバッテリー連動機能(「Battery」)による実行を優先しています。したがいまして、バッテリー連動機能を実行しており、かつバッテリー残量が「しきい値」を下回った場合、「Schedule」で設定された内容は実行されません。<br>
+        <br>        
+        [免責事項等]<br>
+        このアプリケーションを使用したことにより発生するいかなる損害、損失、不利益について、作者は責任を負いかねます。
+        予めご了承ください。<br>
+        <br>
+        ※上記文中の「作者」とは、本アプリケーションの開発者を指します。<br>
+        <br>
+        [お問い合わせ]<br>
+        このアプリケーションに対するご要望や不具合等のご報告がございましたら、下記アドレスまでお願い致します。
+    ]]></string>
+    <string name="description_mail_subject">[要望・バグ報告:オート節電] </string>
+    <string name="description_mailto">mailto:kyakujin.app@gmail.com</string>
+    <string name="mailto">kyakujin.app@gmail.com</string>
+</resources>
