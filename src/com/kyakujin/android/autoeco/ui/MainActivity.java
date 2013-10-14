@@ -234,19 +234,16 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
      * AdViewを挿入
      */
     private void addAD() {
-        // for ad
+        // for adView
         //
-        // adView を作成する
         adView = new AdView(this, AdSize.BANNER, Conf.MY_AD_UNIT_ID);
-        //
-        // 属性 android:id="@+id/mainLayout" が与えられているものとして
-        // LinearLayout をルックアップする
+
         LinearLayout layout = (LinearLayout) findViewById(R.id.admobspace);
 
         // adView処理 --- ここから
         layout.addView(adView);
 
-        // 一般的なリクエストを行って広告を読み込む
+        // 広告の読み込み
         AdRequest adRequest = new AdRequest();
         if (BuildConfig.DEBUG) {
             // ここから - できればリリース時にコメントアウト
